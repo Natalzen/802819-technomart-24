@@ -15,7 +15,7 @@
               <a class="header-order" href="#">Оформить заказ</a>
         </section>
       <div class="site-header-main">
-                  <p class="main-desc"><em>Интернет-магазин строительных материалов для ремонта</em></p>
+                  <p class="main-desc">Интернет-магазин строительных материалов для ремонта</p>
                   <span class="main-phone"> +7(812)555-05-55 </span>
                   <span class="main-address">г.Санкт-Петербург, Б.Конюшенная, д.19/8</span>
                   <a class="username">Равшан Джамшутович</a>
@@ -41,6 +41,24 @@
           <li><a href="#">Инструмент</a></li>
           <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
+          <section class="producers">
+            <h3>Производители:</h3>
+              <ul class="producers-list">
+                <li><input type="checkbox" name="a" value="BOSCH" checked>BOSCH</li>
+                <li><input type="checkbox" name="a" value="INTERSKOL">ИНТЕРСКОЛ</li>
+                <li><input type="checkbox" name="a" value="MAKITA" checked>MAKITA</li>
+                <li><input type="checkbox" name="a" value="DEWALT">DEWALT</li>
+                <li><input type="checkbox" name="a" value="HITACHI">HITACHI</li>
+                </ul>
+            </section>
+          <section class="kind-of-power">
+            <h3>Питание:</h3>
+            <ul>
+              <li><input type="radio" name="b" value="accumulator" checked>Аккумуляторные</li>
+              <li><input type="radio" name="b" value="surge">Сетевые</li>
+              </ul>
+            </section>
+            <span>Показать</span> <!--Кнопка Показать осуществляет отправку формы-->
         <section class="catalog">
           <ul class="catalog-list">
             <li>
@@ -101,29 +119,10 @@
             </ul>
           </section>
       </main>
-        <aside class="filters">
-          <section class="producers">
-            <h3>Производители:</h3>
-              <ul class="producers-list">
-                <li><input type="checkbox" name="a" value="BOSCH" checked>BOSCH</li>
-                <li><input type="checkbox" name="a" value="INTERSKOL">ИНТЕРСКОЛ</li>
-                <li><input type="checkbox" name="a" value="MAKITA" checked>MAKITA</li>
-                <li><input type="checkbox" name="a" value="DEWALT">DEWALT</li>
-                <li><input type="checkbox" name="a" value="HITACHI">HITACHI</li>
-                </ul>
-            </section>
-          <section class="kind-of-power">
-            <h3>Питание:</h3>
-            <ul>
-              <li><input type="radio" name="b" value="accumulator" checked>Аккумуляторные</li>
-              <li><input type="radio" name="b" value="surge">Сетевые</li>
-              </ul>
-            </section>
-            <span>Показать</span> <!--Кнопка Показать осуществляет отправку формы-->
-          </aside>
-          <footer class="site-footer">
+         <footer class="site-footer">
             <a class="logo" href="#"><img src="#" alt="Логотип Интернет-магазина Техномарт"></a>
-              <nav class="footer-site-navigation">
+              <section class="footer-site-navigation">
+                <h4 class="visually-hidden">Навигация по разделам сайта</h4>
                 <ul class="footer-site-navigation-list">
                   <li><a href="#">Компания</a></li>
                   <li><a href="#">Новости</a></li>
@@ -131,23 +130,20 @@
                   <li><a href="#">Доставка</a></li>
                   <li><a href="#">Контакты</a></li>
                   </ul>
-                </nav>
-              <p class="site-footer-contacts">
-                г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                +7 (812)555-05-55
-                </p>
-              <nav class="site-footer-product-types">
+                </section>
+              <p class="site-footer-contacts">г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+              <p class="site-footer-contacts">+7 (812)555-05-55</p>
+              <section class="site-footer-product-types">
+                <h4 class="visually-hidden">Навигация по категориям товара</h4>
                 <ul class="site-footer-product-types-list">
                   <li><a href="#">Материалы</a></li>
                   <li><a href="#">Техника</a></li>
                   <li><a href="#">Инструмент</a></li>
                   <li><a href="#">Спецпредложения</a></li>
                   </ul>
-                </nav>
-              <p class="copyright">
-                2010-2017 Компания Техномарт <br>
-                Все права защищены
-                </p>
+                </section>
+              <p class="copyright">2010-2017 Компания Техномарт</p>
+              <p class="copyright">Все права защищены</p>
                   <ul class="social-buttons-list">
                   <li><a class="social-button-vk" href="#">Вконтакте</a></li>
                   <li><a class="social-button-fb" href="#">Фейсбук</a></li>
