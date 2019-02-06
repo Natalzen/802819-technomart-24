@@ -14,7 +14,7 @@
       <form action="https://echo.htmlacademy.ru" method="get">
         <button name="search" aria-label="Поиск по сайту"></button>
         <label>
-          Поиск:<input type="search" name="search">
+          <input type="search" name="search" placeholder="Поиск:">
         </label>
       </form>
       <a class="header-favorites" href="bookmarks.html">Закладки:0</a>
@@ -25,8 +25,8 @@
       <p class="main-desc">Интернет-магазин строительных материалов для ремонта</p>
       <span class="main-phone">+7(812)555-05-55</span>
       <span class="main-address">г.Санкт-Петербург, Б.Конюшенная, д.19/8</span>
-      <button name="login-link" aria-label="Вход в личный кабинет">Войти</button>
-      <button name="registration" aria-label="Зарегистрироваться в качестве клиента">Регистрация</button>
+      <a class="login-link" href="#">Войти</a>
+      <a class="registration" href="#">Регистрация</a>
     </div>
     <nav class="site-navigation">
       <ul class="site-navigation-list">
@@ -59,19 +59,18 @@
       <p>Вы можете забрать товар сами,</p>
       <p>заехав в наш офис:</p>
       <button name="map-address" aria-label="Карта с адресом офиса Техномарт"><img src="img/Слой_5.png" width="300" height="158" alt="карта с адресом Техномарт"></button>
-      <img src="img/Слой_4.png" width="940" height="447" alt="карта с адресом Техномарт">
-      <button name="close-mw"></button>
+      <div class="modal-map">
+        <img src="img/Слой_4.png" width="940" height="447" alt="карта с адресом Техномарт">
+        <button name="close-mw"></button>
+      </div>
       <button name="connect" aria-label="Кнопка вызова формы обратной связи">Заблудились?Напишите нам!</button>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <label>
-          Ваше имя:<input type="text" name="name-surname" placeholder="Имя Фамилия">
-        </label>
-        <label>
-          Ваш e-mail:<input type="text" name="email" placeholder="email@example.com">
-        </label>
-        <label>
-          Текст письма:<textarea name="message" placeholder="В свободной форме" rows="7"></textarea>
-        </label>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <input id="name-surname" type="text" name="name-surname" placeholder="Имя Фамилия">
+        <label for="name-surname">Ваше имя:</label>
+        <input id="email" type="text" name="email" placeholder="email@example.com">
+        <label for="email">Ваш e-mail:</label>
+        <textarea id="message" name="message" placeholder="В свободной форме" rows="7"></textarea>
+        <label for="message">Текст письма:</label>
         <button name="send-message">Отправить</button>
       </form>
     </section>
