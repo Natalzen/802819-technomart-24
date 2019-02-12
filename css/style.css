@@ -41,6 +41,11 @@ a {
 }
 
 /*верхняя линейка в header*/
+.search-button {
+  background-color: #293449;
+  border: 0;
+}
+
 .header input[type="search"] {
   color: #ffffff;
   background-color: #293449;
@@ -56,6 +61,7 @@ a {
 }
 
 .header input[type="search"]:focus {
+  color: #000000;
   background-color: #ffffff;
 }
 
@@ -118,6 +124,7 @@ a {
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
+  letter-spacing: 0.42px;
 }
 
 .main-address {
@@ -129,6 +136,7 @@ a {
 
 .login-link {
   color: #000000;
+  background-color: #ffffff;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -152,6 +160,7 @@ a {
 
 .registration {
   color: #000000;
+  background-color: #ffffff;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -208,7 +217,17 @@ a {
   text-transform: uppercase;
 }
 
-.container-header p {
+.container-about-technomart .info {
+  color: #ffffff;
+  background-color: #ee3643;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.container-about-technomart p {
+  color: #000000;
   font-family: "PT Sans";
   font-weight: 400;
   line-height: 24px;
@@ -219,17 +238,6 @@ a {
   font-weight: 400;
   line-height: 20px;
 }
-
-.container-about-technomart .info {
-  color: #ffffff;
-  background-color: #ee3643;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.container-about-technomart p {}
 
 .connect {
   color: #ffffff;
@@ -376,11 +384,11 @@ a {
   background-color: #212a3a;
 }
 
-social-buttons-list a:hover {
+.social-buttons-list a:hover {
   background-color: #ee3643;
 }
 
-social-buttons-list a:active {
+.social-buttons-list a:active {
   background-color: #ee3643;
 }
 
@@ -430,9 +438,19 @@ social-buttons-list a:active {
 }
 
 /*стили для страницы catalog*/
+.user-info {
+  background-color: #ffffff;
+}
+
+.user-icon {
+  background-color: #ffffff;
+  border: 0;
+}
+
 .login {
   color: #000000;
   background-color: #ffffff;
+  border: 0;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -444,6 +462,10 @@ social-buttons-list a:active {
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
+}
+
+.wrap-to-my-orders-and-account {
+  background-color: #f2f6f8;
 }
 
 .my-orders {
@@ -561,12 +583,20 @@ social-buttons-list a:active {
   list-style: none;
 }
 
-.catalog-list li:nth-child(1) {
+.card-header h3 {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.catalog-list li {
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
 }
 
-li:nth-child(1) .old-price {
+.old-price {
   color: #999999;
   font-family: "PT Sans";
   font-size: 17px;
@@ -576,7 +606,7 @@ li:nth-child(1) .old-price {
   text-transform: uppercase;
 }
 
-li:nth-child(1) .relevant-price {
+.relevant-price {
   color: #ffffff;
   background-color: #ee3643;
   font-family: "PT Sans";
@@ -586,202 +616,79 @@ li:nth-child(1) .relevant-price {
   text-transform: uppercase;
 }
 
-.catalog-list li:nth-child(2) {
-  border: 1px solid #e5e5e5;
+.card-button-buy {
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  box-shadow: inset 0 -3px 0 #367315;
+  background-color: #63a63e;
+  border: 0;
+}
+
+.card-button-buy:hover {
+  box-shadow: inset 0 -3px 0 #367315;
+  background-color: #5fbb2d;
+}
+
+.card-button-buy:active {
+  background-color: #518534;
+}
+
+.card-button-add {
+  color: #32425c;
   background-color: #ffffff;
-}
-
-li:nth-child(2) .old-price {
-  color: #999999;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  text-decoration: line-through;
-  text-transform: uppercase;
-}
-
-li:nth-child(2) .relevant-price {
-  color: #ffffff;
-  background-color: #ee3643;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+  border: 3px solid #63a63e;
 }
 
-.catalog-list li:nth-child(3) {
-  border: 1px solid #e5e5e5;
+.card-button-add:hover {
+  border: 3px solid #32425c;
+}
+
+.card-button-add:active {
+  opacity: 0.3;
+  color: #32425c;
+  border: 3px solid #32425c;
+  opacity: 0.3;
+}
+
+.modal-basket-confirmation {
+  color: #000000;
   background-color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  box-shadow: 0 20px 40px rgba(41, 52, 73, 0.75);
 }
 
-li:nth-child(3) .old-price {
-  color: #999999;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  text-decoration: line-through;
-  text-transform: uppercase;
+.modal-buttons-wrap {
+  background-color: #f1f1f1;
 }
 
-li:nth-child(3) .relevant-price {
+.modal-buttons-wrap a {
   color: #ffffff;
   background-color: #ee3643;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
 }
 
-.catalog-list li:nth-child(4) {
-  border: 1px solid #e5e5e5;
+.modal-buttons-wrap button {
+  color: #000000;
   background-color: #ffffff;
-}
-
-li:nth-child(4) .old-price {
-  color: #999999;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  text-decoration: line-through;
-  text-transform: uppercase;
-}
-
-li:nth-child(4) .relevant-price {
-  color: #ffffff;
-  background-color: #ee3643;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-}
-
-.catalog-list li:nth-child(5) {
-  border: 1px solid #e5e5e5;
-  background-color: #ffffff;
-}
-
-li:nth-child(5) .old-price {
-  color: #999999;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  text-decoration: line-through;
-  text-transform: uppercase;
-}
-
-li:nth-child(5) .relevant-price {
-  color: #ffffff;
-  background-color: #ee3643;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.catalog-list li:nth-child(6) {
-  border: 1px solid #e5e5e5;
-  background-color: #ffffff;
-}
-
-li:nth-child(6) .old-price {
-  color: #999999;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  text-decoration: line-through;
-  text-transform: uppercase;
-}
-
-li:nth-child(6) .relevant-price {
-  color: #ffffff;
-  background-color: #ee3643;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.catalog-list li:nth-child(7) {
-  border: 1px solid #e5e5e5;
-  background-color: #ffffff;
-}
-
-li:nth-child(7) .old-price {
-  color: #999999;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  text-decoration: line-through;
-  text-transform: uppercase;
-}
-
-li:nth-child(7) .relevant-price {
-  color: #ffffff;
-  background-color: #ee3643;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.catalog-list li:nth-child(8) {
-  border: 1px solid #e5e5e5;
-  background-color: #ffffff;
-}
-
-li:nth-child(8) .old-price {
-  color: #999999;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  text-decoration: line-through;
-  text-transform: uppercase;
-}
-
-li:nth-child(8) .relevant-price {
-  color: #ffffff;
-  background-color: #ee3643;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.catalog-list li:nth-child(9) {
-  border: 1px solid #e5e5e5;
-  background-color: #ffffff;
-}
-
-li:nth-child(9) .old-price {
-  color: #999999;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  text-decoration: line-through;
-  text-transform: uppercase;
-}
-
-li:nth-child(9) .relevant-price {
-  color: #ffffff;
-  background-color: #ee3643;
-  font-family: "PT Sans";
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 18px;
-  text-transform: uppercase;
+  border: 0;
 }
