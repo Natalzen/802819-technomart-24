@@ -14,7 +14,7 @@
     <section class="header">
       <h1 class="visually-hidden">Интернет-магазин Техномарт</h1>
       <a class="header-logo" href="index.html"><img src="img/logo-technomart.svg" width="110" height="18" alt="Логотип интернет-магазина Техномарт"></a>
-      <form action="https://echo.htmlacademy.ru" method="get">
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
         <button class="search-button" name="search" aria-label="Поиск по сайту">
           <img width="17" height="17" src="img/icon-search.svg" alt="иконка поиска">
         </button>
@@ -22,27 +22,35 @@
           <input type="search" name="search" placeholder="Поиск:">
         </label>
       </form>
-      <a class="header-favorites" href="bookmarks.html"><img width="14" height="16" src="img/icon-bookmark.svg" alt="иконка закладки">Закладки:0</a>
-      <a class="header-basket" href="basket.html"><img width="15" height="15" src="img/icon-cart.svg" alt="иконка корзины">Корзина:0</a>
+      <a class="header-favorites" href="bookmarks.html">
+        <!--img width="14" height="16" src="img/icon-bookmark.svg" alt="иконка закладки">-->Закладки: 0</a>
+      <a class="header-basket" href="basket.html">
+        <!--<img width="15" height="15" src="img/icon-cart.svg" alt="иконка корзины">-->Корзина: 0</a>
       <a class="header-order" href="checkout.html">Оформить заказ</a>
     </section>
     <div class="site-header-main">
       <p class="main-desc">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <span class="main-phone"><img width="19" height="19" src="img/icon-phone.svg" alt="иконка телефонный номер">+7(812)555-05-55</span>
-      <span class="main-address">г.Санкт-Петербург, Б.Конюшенная, д.19/8</span>
-      <a class="login-link" href="#"><img width="20" height="17" src="img/icon-login.svg" alt="иконка вход">Войти</a>
+      <div class="wrap-for-main-phone-address">
+        <p class="main-phone">
+          <!--<img width="19" height="19" src="img/icon-phone.svg" alt="иконка телефонный номер">-->+7(812)555-05-55</p>
+        <p class="main-address">г.Санкт-Петербург, Б.Конюшенная, д.19/8</p>
+      </div>
+      <a class="login-link" href="#">
+        <!--<img width="20" height="17" src="img/icon-login.svg" alt="иконка вход">-->Войти</a>
       <a class="registration" href="#">Регистрация</a>
     </div>
     <nav class="site-navigation">
-      <ul class="site-navigation-list">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="about-company.html">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="actions.html">Спецпредложения</a></li>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
+      <div class="site-navigation-wrapper">
+        <ul class="site-navigation-list">
+          <li><a class="site-navigation-index" href="index.html">Главная</a></li>
+          <li><a class="site-navigation-about-company" href="about-company.html">Компания</a></li>
+          <li><a class="site-navigation-catalog" href="catalog.html">Каталог</a></li>
+          <li><a class="site-navigation-news" href="news.html">Новости</a></li>
+          <li><a class="site-navigation-actions" href="actions.html">Спецпредложения</a></li>
+          <li><a class="site-navigation-delivery" href="delivery.html">Доставка</a></li>
+          <li><a class="site-navigation-contacts" href="contacts.html">Контакты</a></li>
+        </ul>
+        <div>
     </nav>
   </header>
   <main class="container">
@@ -50,7 +58,7 @@
       <h2 class="container-header">Компания "Техномарт"</h2>
       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
         строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+      <p>Мы можем доставить ваш товар в самые отдаленные точки России! <br>
         Техномарт работает со многими транспортными компаниями:</p>
       <ul class="transport-companies">
         <li>Деловые линии</li>
@@ -64,12 +72,13 @@
       <p>Вы можете забрать товар сами,</p>
       <p>заехав в наш офис:</p>
       <button class="map-address" name="map-address" aria-label="Карта с адресом офиса Техномарт"><img src="img/Слой_5.png" width="300" height="158" alt="карта с адресом Техномарт"></button>
-      <div class="modal-map">
+      <button class="connect" name="connect" aria-label="Кнопка вызова формы обратной связи">Заблудились?Напишите нам!</button>
+      <!--<div class="modal-map">
         <img src="img/Слой_4.png" width="940" height="447" alt="карта с адресом Техномарт">
         <button class="close-mw" name="close-mw"></button>
-      </div>
-      <button class="connect" name="connect" aria-label="Кнопка вызова формы обратной связи">Заблудились?Напишите нам!</button>
-      <div class="modal-connect">
+      </div>-->
+
+      <!--<div class="modal-connect">
         <form action="https://echo.htmlacademy.ru" method="post">
           <input id="name-surname" type="text" name="name-surname" placeholder="Имя Фамилия">
           <label for="name-surname">Ваше имя:</label>
@@ -79,7 +88,7 @@
           <label for="message">Текст письма:</label>
           <button class="send-message" name="send-message">Отправить</button>
         </form>
-      </div>
+      </div> -->
     </section>
   </main>
   <footer class="site-footer">
@@ -94,8 +103,12 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </div>
-      <p class="site-footer-contacts">г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
-      <p class="site-footer-contacts">+7 (812)555-05-55</p>
+    </div>
+    <div class="wrap-footer-middle">
+      <div class="wrap-site-footer-contacts">
+        <p class="site-footer-contacts">г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          +7 (812)555-05-55</p>
+      </div>
       <div class="site-footer-product-types">
         <ul class="site-footer-product-types-list">
           <li><a href="materials.html">Материалы</a></li>
@@ -106,29 +119,26 @@
       </div>
     </div>
     <div class="wrap-footer-bottom">
-      <p class="copyright">2010-2019 Компания Техномарт</p>
-      <p class="copyright">Все права защищены</p>
+      <p class="copyright">2010-2019 Компания "Техномарт"<br>
+        Все права защищены</p>
       <ul class="social-buttons-list">
         <li>
           <a class="social-button-vk" href="https://vk.com/technomart" aria-label="Техномарт во Вконтакте">
-            <img class="icon-social vk" width="26" height="15" src="img/icon-vk.svg" alt="иконка вконтакте">Вконтакте
-          </a>
+            <img class="icon-social vk" width="26" height="15" src="img/icon-vk.svg" alt="иконка вконтакте"></a>
         </li>
         <li>
           <a class="social-button-fb" href="https://facebook.com/technomart" aria-label="Техномарт на Фейсбук">
-            <img class="icon-social fb" width="26" height="15" src="img/icon-fb.svg" alt="иконка фейсбук">Фейсбук</a>
+            <img class="icon-social fb" width="26" height="15" src="img/icon-fb.svg" alt="иконка фейсбук"></a>
         </li>
         <li>
           <a class="social-button-in" href="https://instagram.com/technomart" aria-label="Техномарт в Инстаграм">
-            <img class="icon-social in" width="26" height="15" src="img/icon-insta.svg" alt="иконка инстаграмм">Инстаграм</a>
+            <img class="icon-social in" width="26" height="15" src="img/icon-insta.svg" alt="иконка инстаграмм"></a>
         </li>
       </ul>
-      <span class="feedback">Обратная связь:
-        <a class="feedback-email" href="mail-to-developer.html" aria-label="Отправить e-mail разработчику">mail@htmlacademy.ru</a>
-      </span>
-      <span class="developer">Разработано -
-        <a class="developer-name" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт разработчика">HTML Academy</a>
-      </span>
+      <p class="feedback">Обратная связь:<br>
+        <a class="feedback-email" href="mail-to-developer.html" aria-label="Отправить e-mail разработчику">mail@htmlacademy.ru</a></p>
+      <p class="developer">Разработано -<br>
+        <a class="developer-name" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на сайт разработчика">HTML Academy</a></p>
     </div>
   </footer>
 
